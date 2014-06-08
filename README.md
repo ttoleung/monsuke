@@ -1,6 +1,6 @@
-monsuke-1
-=========
+monsuke
+=======
 
 Download and perform technical analysis on US Fed Rates
 
-First version written in PERL
+Written in Ocaml, and PHP and mySQL
