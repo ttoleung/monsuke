@@ -1,0 +1,2 @@
+# Monsuke Fed Rates
+00 08 * * * python /home/eclipse/monsuke/monsuke.py
