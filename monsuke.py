@@ -47,7 +47,7 @@ def get_sql(html):
 	return sql_list
 
 def sql_insert(sql_list):
-	con = mdb.connect('localhost', 'eclipse', 'eclipse', 'monsuke');
+	con = mdb.connect('localhost', 'eclipse', 'uqa5a8u9e', 'zadmin_monsuke');
 	cur = con.cursor()
 	for sql in sql_list:
 		try:
@@ -58,6 +58,7 @@ def sql_insert(sql_list):
 			print 'key date already existed for ' + sql[97:107]
 	con.close()
 
-html = get_www_content(rate_url())
-sql_list = get_sql(html)
-sql_insert(sql_list)
+if __name__ == '__main__':
+	html = get_www_content(rate_url())
+	sql_list = get_sql(html)
+	sql_insert(sql_list)
